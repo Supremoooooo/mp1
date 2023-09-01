@@ -1,0 +1,412 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+</head>
+    <style>
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+    *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+    font-family: 'Poppins', sans-serif;
+}
+
+body{
+    background-color: #FFF5E0;
+}
+
+    /* Navbar */
+img{
+    width: 300px;
+}
+
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+    padding-left: 10%;
+    padding-right: 10%;
+    background-color: #FFF5E0;
+    border-bottom: solid 1px;
+}
+
+nav ul li {
+    list-style-type: none;
+    display: inline-block;
+    padding: 10px 20px;  
+}
+
+nav ul li a{
+    font-size: 16px;
+        text-transform: capitalize;
+        color: #ffffff;
+        text-decoration: none;
+        font-weight: 300;
+        color: #050505;
+        display: block;
+        transform: all 0.3s ease;
+}
+
+
+nav ul li a:hover{
+    color: #F94C10;
+    padding-left: 8px;
+}
+
+button{
+    border: none;
+    background: #F94C10;
+    padding: 12px 30px;
+    border-radius: 30px;
+    color: white;
+    font-size: 15px;
+    transition: .4s;
+}
+
+button:hover{
+    transform: scale(1.3);
+    cursor: pointer;
+}
+    /* End of Navbar */
+
+    /* Footer */
+
+    .container{
+        max-width: auto;
+        margin: auto;
+    }
+
+    .row{
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    ul{
+        list-style: none;
+    }
+
+    .footer{
+        background: #24262b;
+        padding: 50px 0;
+    }
+
+    .footer-col{
+        width: 25%;
+        padding: 0 60px ;
+    }
+
+    .footer-col h4{
+        font-size: 18px;
+        color: #ffffff;
+        text-transform: capitalize;
+        margin-bottom: 35px;
+        font-weight: 500;
+        position: relative;
+    }
+
+    .footer-col h4::before{
+        content:'';
+        position: absolute;
+        left: 0;
+        bottom: -10px;
+        background-color: #e91e63;
+        height: 2px;
+        box-sizing: border-box;
+        width: 50px;
+    }
+
+    .footer-col ul li:not(:last-child){
+        margin-bottom: 10px;
+    }
+
+    .footer-col ul li a{
+        font-size: 16px;
+        text-transform: capitalize;
+        color: #ffffff;
+        text-decoration: none;
+        font-weight: 300;
+        color: #bbbbbb;
+        display: block;
+        transform: all 0.3s ease;
+    }
+
+    .footer-col ul li a:hover{
+        color: #F94C10;
+        padding-left: 8px;
+    }
+
+    .footer-col .social-links a{
+        display: inline-block;
+        height: 40px;
+        width: 40px;
+        background-color: rgba(255,255,255,0.2);
+        margin-right: 10px;
+        line-height: 40px ;
+        text-align: center;
+        border-radius: 50px;
+        color: #ffffff;
+        transition: all 0.5s ease;
+    }
+
+    .footer-col .social-links a:hover{
+        color: #F94C10;
+        background-color: #ffffff;
+    }
+
+    @media(max-width: 767){
+        .footer-col{
+            width: 50%;
+            margin-bottom: 30px;
+        }
+    }
+
+    @media(max-width: 574){
+        .footer-col{
+            width: 100%;
+            margin-bottom: 30px;
+        }
+    }
+    /* end of footer */
+
+
+
+    /* BODY */
+    /* First Image */
+.container1{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+}    
+
+.image{
+    /* flex: 1; */
+    text-align: right;
+}
+
+.image img {
+    height: 250px;
+    width: 500px;
+    /* padding-left: 50px; */
+}
+
+.image:hover{
+    transition: 0.5s ease;
+    transform: scale(1.1);
+}
+
+.detail{
+    /* flex: 1; */
+    /* text-align: right; */
+    padding-left: 50px;
+    padding-right: 50px;
+    text-align: justify;
+}
+
+.detail{
+    margin: 0;
+}
+
+.button-container{
+    display: flex;
+    margin-left: 20px;
+    
+}
+    /* end of first image */
+
+    /* Second Image */
+    .container2 {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 20px;
+}
+
+.image2 img{
+    height: 250px;
+    width: auto;
+    position: relative;
+    right: 10px;
+}
+
+
+.detail2{
+padding-left: 30px;
+padding-right: 30px;
+text-align: justify;
+}
+
+.button-container2{
+    display: flex;
+    justify-content: flex-end;
+    position: relative;
+    right: 190px;
+}
+
+.image2:hover{
+    transition: 0.5s ease;
+    transform: scale(1.1);
+}
+    /* End of image 2 */
+
+    h1{
+        display: flex;
+        position: relative;
+        left: 20px;
+        padding-top: 30px;
+    }
+
+    .box1{
+        display: flex;
+        justify-content: flex-end;
+        position: relative;
+        right: 50px;
+    }
+
+    .image3 img{
+    height: 250px;
+    width: auto;
+}
+
+.image3:hover{
+    transition: 0.5s ease;
+    transform: scale(1.1);
+    
+}
+
+h2{
+    display: flex;  
+    /* text-align: justify; */
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
+    #paragraph{
+        display: flex;
+        position: relative;
+        right: 20px;
+    }
+</style>
+<body>
+    <div id="hero">
+        <div>
+            <nav>
+                <img src="/Image/Akay6.png" alt="">
+                <ul>
+                    <li><a href="/Home/Home.html">Home</a></li>
+                    <li><a href="/About/about.html" target="_blank">About</a></li>
+                    <li><a href="#">Projects</a></li>
+                    <li><a href="#">Service</a></li>
+                    <li><a href="">Contact</a></li>
+                </ul>
+                <button type="button" onclick="window.open('../Donate/donate.html','_blank')" >Login</button>
+            </nav>
+        </div>
+    </div>
+
+    <!-- First Image -->
+
+    <h1>Volunteer</h1>
+    <section class="container1">
+        <div class="image">
+            <img src="/Image/vonti.jpg" alt="">
+        </div>
+        <div class="detail">
+            <p>With a deep sense of compassion and solidarity, our organization strives to make a meaningful impact by extending a helping hand to underprivileged families. Through collaborative efforts, we work tirelessly to provide essential necessities such as food, clean water, clothing, and shelter, aiming to alleviate their burdens and enhance their quality of life. Recognizing the urgency of their needs, we believe that by coming together as a community, we can create positive change and uplift those facing challenging circumstances. Every contribution, no matter how small, makes a significant difference in our collective endeavor to bring hope and support to those who need it most.</p>
+        </div>
+    </section>
+        <div class="button-container">
+            <button>Learn More</button>
+        </div>
+
+
+            <div class="box1">
+                <h1>Free Education</h1>
+            </div>
+        
+    <!-- Second Image -->
+    <section class="container2">
+        <div class="detail2">
+            <p id="paragraph">Our unwavering commitment to accessible education drives us to offer free learning opportunities, empowering individuals from all walks of life to pursue knowledge without financial barriers. By eliminating tuition fees and associated costs, we aim to democratize education and foster a culture of continuous learning. Our comprehensive curriculum, taught by experienced educators, provides the tools and skills necessary for personal and professional growth. We believe that everyone deserves the chance to expand their horizons, and through this initiative, we're dedicated to creating a more equitable society where education is a fundamental right rather than a privilege, paving the way for a brighter and more inclusive future.</p>
+        </div>
+        <div class="image2" style="width: 300px; height: auto;">
+            <img src="/Image/edu.jpg" alt="">
+        </div>
+    </section>
+    <div class="button-container2">
+        <button>Learn More</button>
+    </div>
+
+
+        </div>   
+        <!-- Third Image -->
+            <h1>Free Medical Supplies</h1>
+            <section class="container1">
+        <div class="image3">
+            <img src="/Image/medical.webp" alt="">
+        </div>
+        <div class="detail">
+            <p>
+                Driven by our commitment to equitable healthcare, we are dedicated to supplying essential medical resources at no cost, ensuring that disadvantaged populations receive the necessary care they deserve. Our initiative encompasses sourcing, procuring, and distributing a wide range of medical supplies, including medications, equipment, and protective gear, all aimed at improving healthcare accessibility and quality. By removing financial barriers, we empower healthcare providers to deliver effective treatment and preventive services to underserved communities. With a focus on inclusivity and compassion, our mission is to contribute to a healthier society where everyone, regardless of their economic status, has access to the medical supplies required for a better quality of life.</p>
+        </div>
+    </section>
+    <div class="button-container">
+        <button>Learn More</button>
+    </div><br><br>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="footer-col">
+                    <h4>Contact Us</h4>
+                    <ul>
+                        <li><a href="">FAQs</a></li>
+                        <li><a href=""> Terms of Use</a></li>
+                        <li><a href="">Privacy Policy</a></li>
+                        <li><a href="">Affiliate program</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Get help</h4>
+                    <ul>
+                        <li><a href="">Help Center</a></li>
+                        <li><a href="">Support Portal</a></li>
+                        <li><a href="">Service Notices</a></li>
+                        <li><a href="">Partner Directory</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Take Action</h4>
+                    <ul>
+                        <li><a href="">Volunteer</a></li>
+                        <li><a href="">Donate & Sponsor</a></li>
+                        <li><a href="">Partner with us</a></li>
+                        <li><a href=""></a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Follow us</h4>
+                    <div class="social-links">
+                        <a href=""><i class='bx bxl-facebook-circle'></i></a>
+                        <a href=""><i class='bx bxl-youtube'></i></a>
+                        <a href=""><i class='bx bxl-twitter'></i></a>
+                        <a href=""><i class='bx bxl-gmail'></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct" crossorigin="anonymous"></script>
+</body>
+</html>

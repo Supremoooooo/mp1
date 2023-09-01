@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+    <style>
+    *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+    font-family: 'Poppins', sans-serif;
+}
+
+body{
+    background: rgba(0,0,0,0.7)url(/Image/NonProfit.jpg);
+    background-color: gray;
+    /* background-size: cover; */
+    background-blend-mode: darken;
+    background-repeat: no-repeat;
+    /* justify-content: center;  */
+    /* text-align: center; */
+}
+
+img{
+    width: 300px;
+}
+
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+    padding-left: 10%;
+    padding-right: 10%;
+    background-color:#FFF5E0;
+}
+
+nav ul li {
+    list-style-type: none;
+    display: inline-block;
+    padding: 10px 20px;  
+}
+
+
+nav ul li a{
+    font-size: 16px;
+        text-transform: capitalize;
+        color: #ffffff;
+        text-decoration: none;
+        font-weight: 300;
+        color: #050505;
+        display: block;
+        transform: all 0.3s ease;
+}
+
+
+nav ul li a:hover{
+    color: #F94C10;
+    padding-left: 8px;
+}
+
+button{
+    border: none;
+    background: #F94C10;
+    padding: 12px 30px;
+    border-radius: 30px;
+    color: white;
+    font-size: 15px;
+    transition: .4s;
+}
+
+button:hover{
+    transform: scale(1.3);
+    cursor: pointer;
+}
+    /* first section */
+section{
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    margin-top: 200px;
+    margin-left: 100px;
+    font-size: 50px;
+    align-items: center;
+    color: rgb(255, 255, 255);
+}
+
+    /* FILL UP FORM */
+    h1{
+            color:#fff
+        }
+
+        .AppForm{
+            width: 420px;
+            padding: 30px 40px;
+            border: 2px solid rgba(255, 255, 255, .2);
+            border-radius: 3%;
+            background: transparent;
+            backdrop-filter: blur(10px);
+        }
+
+        .AppForm h1{
+            font-size: 2.5rem;
+            text-align: center;
+        }
+
+        .AppForm .input-box{
+            width: 100%;
+            height: 50px;
+            margin: 30px 0;
+        }
+
+        .AppForm input{
+            width: 100%;
+            height: 100%;
+            background: transparent;
+            border: none;
+            outline: none;
+            border: 1px solid rgba(255, 255, 255, .2);
+            border-radius: 40px;
+            padding: 20px 45px 20px 20px;
+        }
+
+        .input-box input[type=text] {
+            color: #fff;
+        }
+
+        .input-box input::placeholder{
+            color:azure
+        }
+
+        .AppForm .btn{
+            width: 100%;
+            height: 45px;
+            background: rgba(255, 255, 255, .2);
+            border: none;
+            outline: none;
+            border-radius: 40px;
+            border: 2px rgba(255, 255, 255, .2);
+            cursor: pointer;
+            font-size: 20px;
+            font-weight: 600;
+            transition: .3s;
+            color: #fff;
+        }
+
+        .AppForm .btn:hover{
+            color:#F94C10 ;
+            transform: scale(1.1);
+        }
+
+        /* footer */
+        
+
+        .container{
+        max-width: auto;
+        margin: auto;
+    }
+
+    .row{
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    ul{
+        list-style: none;
+    }
+
+    .footer{
+        background: #24262b;
+        padding: 50px 0;
+    }
+
+    .footer-col{
+        width: 25%;
+        padding: 0 60px ;
+    }
+
+    .footer-col h4{
+        font-size: 18px;
+        color: #ffffff;
+        text-transform: capitalize;
+        margin-bottom: 35px;
+        font-weight: 500;
+        position: relative;
+    }
+
+    .footer-col h4::before{
+        content:'';
+        position: absolute;
+        left: 0;
+        bottom: -10px;
+        background-color: #e91e63;
+        height: 2px;
+        box-sizing: border-box;
+        width: 50px;
+    }
+
+    .footer-col ul li:not(:last-child){
+        margin-bottom: 10px;
+    }
+
+    /* copy this in home */
+    .footer-col ul li a{
+        font-size: 16px;
+        text-transform: capitalize;
+        color: #ffffff;
+        text-decoration: none;
+        font-weight: 300;
+        color: #bbbbbb;
+        display: block;
+        transform: all 0.3s ease;
+    }
+
+    .footer-col ul li a:hover{
+        color: #F94C10;
+        padding-left: 8px;
+    }
+
+    .footer-col .social-links a{
+        display: inline-block;
+        height: 40px;
+        width: 40px;
+        background-color: rgba(255,255,255,0.2);
+        margin-right: 10px;
+        line-height: 40px ;
+        text-align: center;
+        border-radius: 50px;
+        color: #ffffff;
+        transition: all 0.5s ease;
+    }
+
+    .footer-col .social-links a:hover{
+        color: #F94C10;
+        background-color: #ffffff;
+    }
+
+    @media(max-width: 767){
+        .footer-col{
+            width: 50%;
+            margin-bottom: 30px;
+        }
+    }
+
+    @media(max-width: 574){
+        .footer-col{
+            width: 100%;
+            margin-bottom: 30px;
+        }
+    }
+
+    .AppForm{
+        position: relative;
+        bottom: 70px;
+    }
+    </style>
+</head>
+<body>
+
+    <div id="hero">
+        <div>
+            <nav>
+                <img src="/Image/Akay6.png" alt="">
+                <ul>
+                <li><a href="/Home/Home.html">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Projects</a></li>
+                <li><a href="#">Service</a></li>
+                <li><a href="#">Contact Us</a></li>
+                </ul>
+                <!-- <button type="button">DONATE</button> -->
+            </nav>
+        </div>
+    </div>
+    <section class="box1">
+        <div class="AppForm">
+            <form action="">
+                <h1>Application</h1>
+                <div class="input-box">
+                    <input type="text" placeholder="Last Name" required>
+                </div>
+                <div class="input-box">
+                    <input type="text" placeholder="First Name" required>
+                </div>
+                <div class="input-box">
+                    <input type="text" placeholder="Email" required>
+                </div>
+                <div class="input-box">
+                    <input type="text" placeholder="Number(Optional)">
+                </div>
+                <button type="submit" class="btn">Submit</button>
+            </form>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="footer-col">
+                    <h4>Contact Us</h4>
+                    <ul>
+                        <li><a href="">FAQs</a></li>
+                        <li><a href=""> Terms of Use</a></li>
+                        <li><a href="">Privacy Policy</a></li>
+                        <li><a href="">Affiliate program</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Get help</h4>
+                    <ul>
+                        <li><a href="">Help Center</a></li>
+                        <li><a href="">Support Portal</a></li>
+                        <li><a href="">Service Notices</a></li>
+                        <li><a href="">Partner Directory</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Take Action</h4>
+                    <ul>
+                        <li><a href="">Volunteer</a></li>
+                        <li><a href="">Donate & Sponsor</a></li>
+                        <li><a href="">Partner with us</a></li>
+                        <li><a href=""></a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Follow us</h4>
+                    <div class="social-links">
+                        <a href=""><i class='bx bxl-facebook-circle'></i></a>
+                        <a href=""><i class='bx bxl-youtube'></i></a>
+                        <a href=""><i class='bx bxl-twitter'></i></a>
+                        <a href=""><i class='bx bxl-gmail'></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
